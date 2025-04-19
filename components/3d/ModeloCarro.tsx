@@ -3,12 +3,12 @@
 import { Canvas, useFrame, useLoader } from '@react-three/fiber'
 import { OrbitControls, Environment, Stage } from '@react-three/drei'
 import { Suspense, useEffect, useRef } from 'react'
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+import { GLTFLoader } from 'three-stdlib'
 import * as THREE from 'three'
 
 function CarModel() {
   const gltf = useLoader(GLTFLoader, '/toyota_supra_a90_3d_printeble_model.glb')
-  const mixerRef = useRef<THREE.AnimationMixer>()
+  const mixerRef = useRef<THREE.AnimationMixer | null>(null)
 
   useEffect(() => {
     if (gltf.animations.length > 0) {

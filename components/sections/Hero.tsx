@@ -1,6 +1,5 @@
 'use client'
 
-
 export default function Hero() {
   return (
     <section className="relative w-full h-[80vh] flex items-center justify-start text-white overflow-hidden">

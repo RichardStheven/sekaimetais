@@ -34,7 +34,7 @@ export default function NavBar() {
       {/* Menu Mobile Dropdown */}
       {isOpen && (
         <ul className="absolute top-full left-0 w-full bg-[#1c1c1c] text-white text-sm flex flex-col gap-4 py-4 px-6 sm:hidden z-50 border-t border-neutral-700">
-          <li><Link href="#quem-somos" onClick={() => setIsOpen(false)} className="hover:text-orange-500">Quem Somos</Link></li>
+          <li><Link href="quem-somos" onClick={() => setIsOpen(false)} className="hover:text-orange-500">Quem-Somos</Link></li>
           <li><Link href="#servicos" onClick={() => setIsOpen(false)} className="hover:text-orange-500">Serviços</Link></li>
           <li><Link href="#diferenciais" onClick={() => setIsOpen(false)} className="hover:text-orange-500">Diferenciais</Link></li>
           <li><Link href="#trabalhe" onClick={() => setIsOpen(false)} className="hover:text-orange-500">Trabalhe Conosco</Link></li>
